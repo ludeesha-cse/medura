@@ -1,0 +1,734 @@
+{
+  "site": {
+    "name": "Medura",
+    "legalName": "Medura Design & Engineering Consultants",
+    "tagline": "We draw your dreams",
+    "url": "https://medura.lk",
+    "logo": {
+      "horizontal": {
+        "light": "/images/brand/logo-horizontal.svg",
+        "dark": "/images/brand/logo-horizontal-dark.svg"
+      },
+      "stacked": {
+        "light": "/images/brand/logo.svg",
+        "dark": "/images/brand/logo-dark.svg"
+      },
+      "mark": {
+        "light": "/images/brand/logo-mark.svg",
+        "dark": "/images/brand/logo-mark-dark.svg"
+      }
+    },
+    "favicon": "/images/brand/favicon.svg",
+    "appleTouchIcon": "/images/brand/apple-touch-icon.png",
+    "ogImage": "/images/brand/og-image.png",
+    "seo": {
+      "title": "Medura — Design & Engineering Consultants in Sri Lanka",
+      "titleTemplate": "%s | Medura",
+      "description": "Architectural design, structural engineering, building approval drawings, MEP and site supervision for homes and businesses across Sri Lanka.",
+      "keywords": [
+        "civil engineering Sri Lanka",
+        "architect Kandy",
+        "house plans Sri Lanka",
+        "building approval drawings",
+        "structural design",
+        "quantity surveying BOQ"
+      ]
+    },
+    "navigation": [
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "Architecture",
+        "href": "/architecture/"
+      },
+      {
+        "label": "Projects",
+        "href": "/projects/"
+      },
+      {
+        "label": "Engineering & Services",
+        "href": "/services/"
+      },
+      {
+        "label": "About & Contact",
+        "href": "/about/"
+      }
+    ],
+    "navCta": {
+      "label": "Contact",
+      "href": "/about/#contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Design & Engineering Consultants",
+      "heading": "We draw your dreams — and build them right.",
+      "subheading": "From the first sketch to the final inspection, Medura designs and engineers homes, offices and hotels across Sri Lanka with care, clarity and code-compliant precision.",
+      "images": [
+        {
+          "src": "/images/home/hero-1.svg",
+          "alt": "Modern two-storey house in Kandy at dusk"
+        },
+        {
+          "src": "/images/home/hero-2.svg",
+          "alt": "Commercial building facade in Colombo"
+        }
+      ],
+      "ctas": [
+        {
+          "label": "View Projects",
+          "href": "/projects/",
+          "variant": "accent"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/about/#contact",
+          "variant": "outline"
+        }
+      ]
+    },
+    "stats": [
+      {
+        "value": 12,
+        "suffix": "+",
+        "label": "Years of experience"
+      },
+      {
+        "value": 180,
+        "suffix": "+",
+        "label": "Projects completed"
+      },
+      {
+        "value": 150,
+        "suffix": "+",
+        "label": "Happy clients"
+      },
+      {
+        "value": 18,
+        "label": "Districts served"
+      }
+    ],
+    "servicesPreview": {
+      "eyebrow": "What we do",
+      "heading": "Design and engineering under one roof",
+      "subheading": "One team for your drawings, approvals, structure and services — so nothing gets lost between consultants.",
+      "cards": [
+        {
+          "title": "Architectural Design",
+          "description": "House plans, approval drawings, 3D renders, interiors and landscapes tailored to your site and budget.",
+          "href": "/architecture/",
+          "icon": "DraftingCompass",
+          "image": {
+            "src": "/images/architecture/house-plans.svg",
+            "alt": "Architectural floor plan drawings on a desk"
+          }
+        },
+        {
+          "title": "Engineering & Other Services",
+          "description": "Structural and MEP design, site supervision, BOQs and structural assessments by chartered engineers.",
+          "href": "/services/",
+          "icon": "HardHat",
+          "image": {
+            "src": "/images/engineering/structural-design.svg",
+            "alt": "Reinforced concrete frame under construction"
+          }
+        }
+      ]
+    },
+    "featuredProjects": {
+      "eyebrow": "Selected work",
+      "heading": "Featured projects",
+      "subheading": "A few recent projects we're proud of.",
+      "projectIds": ["kandy-hillside-residence", "colombo-office-tower", "galle-boutique-villa"],
+      "cta": {
+        "label": "See all projects",
+        "href": "/projects/"
+      }
+    },
+    "whyChooseUs": {
+      "eyebrow": "Why Medura",
+      "heading": "Why clients choose Medura",
+      "subheading": "Good design is only half the job. We make sure it gets approved, built and handed over properly.",
+      "image": {
+        "src": "/images/home/why-medura.svg",
+        "alt": "Medura engineer reviewing drawings on site"
+      },
+      "points": [
+        {
+          "title": "Approvals handled",
+          "description": "We prepare and follow up local authority and UDA submissions so your permit isn't stuck for months.",
+          "icon": "FileCheck"
+        },
+        {
+          "title": "Chartered engineers",
+          "description": "Every structure is designed and checked by IESL-chartered engineers to Eurocode and Sri Lankan standards.",
+          "icon": "ShieldCheck"
+        },
+        {
+          "title": "Clear budgets",
+          "description": "Detailed BOQs in LKR help you compare contractor quotes and avoid surprise costs mid-build.",
+          "icon": "Calculator"
+        },
+        {
+          "title": "On site, not just on paper",
+          "description": "Regular site visits and supervision keep construction true to the drawings.",
+          "icon": "ClipboardCheck"
+        }
+      ]
+    },
+    "ctaBanner": {
+      "heading": "Planning a new home or building?",
+      "text": "Tell us about your land and your ideas — we'll get back to you within one working day.",
+      "ctas": [
+        {
+          "label": "Get a free consultation",
+          "href": "/about/#contact",
+          "variant": "accent"
+        }
+      ],
+      "image": {
+        "src": "/images/home/cta.svg",
+        "alt": "Construction site at sunset"
+      }
+    }
+  },
+  "architecture": {
+    "intro": {
+      "eyebrow": "Architecture",
+      "heading": "Architectural design services",
+      "subheading": "Thoughtful, buildable designs for Sri Lankan sites, climates and budgets — from a single room to a full commercial building."
+    },
+    "services": [
+      {
+        "id": "house-plans",
+        "title": "House Plans",
+        "shortDescription": "Custom home designs that make the most of your land, light and budget.",
+        "longDescription": "We start with your plot, your family and your budget. After a site visit and a brief, we develop concept sketches, then refine them into detailed floor plans, elevations and sections.\n\nOur designs respond to Sri Lankan conditions — cross-ventilation, deep eaves for monsoon rains and orientation that keeps rooms cool without relying on air-conditioning.",
+        "icon": "Home",
+        "image": {
+          "src": "/images/architecture/house-plans.svg",
+          "alt": "Floor plan of a three-bedroom house"
+        },
+        "highlights": [
+          "Site visit & brief",
+          "Concept sketches",
+          "Detailed floor plans, elevations & sections"
+        ]
+      },
+      {
+        "id": "approval-drawings",
+        "title": "Building Approval Drawings",
+        "shortDescription": "Complete drawing sets for local authority and UDA approval.",
+        "longDescription": "Getting a building permit can be slow and confusing. We prepare complete submission sets — site plans, architectural drawings and structural details — in the format required by Municipal Councils, Pradeshiya Sabhas and the UDA.\n\nWe also follow up on comments and resubmissions until your approval is granted.",
+        "icon": "FileCheck",
+        "image": {
+          "src": "/images/architecture/approval-drawings.svg",
+          "alt": "Stamped building approval drawings"
+        },
+        "highlights": [
+          "Municipal Council & Pradeshiya Sabha",
+          "UDA submissions",
+          "Follow-up until approval"
+        ]
+      },
+      {
+        "id": "3d-renders",
+        "title": "3D Renders & Walkthroughs",
+        "shortDescription": "See your building before it's built with photorealistic renders and videos.",
+        "longDescription": "Photorealistic exterior and interior renders help you make decisions with confidence — and help banks, investors and family understand the design.\n\nFor larger projects we produce animated walkthroughs that you can share on any phone.",
+        "icon": "Box",
+        "image": {
+          "src": "/images/architecture/3d-renders.svg",
+          "alt": "3D render of a modern villa"
+        },
+        "highlights": ["Exterior & interior renders", "Animated walkthroughs", "Revisions included"]
+      },
+      {
+        "id": "interior-design",
+        "title": "Interior Design",
+        "shortDescription": "Functional, beautiful interiors with furniture, lighting and finish schedules.",
+        "longDescription": "We design interiors that suit how you live and work — layouts, built-in joinery, lighting, colour and finishes — and provide drawings your carpenter and contractor can build from.\n\nWe can source locally made furniture and materials to keep costs reasonable.",
+        "icon": "Armchair",
+        "image": {
+          "src": "/images/architecture/interior-design.svg",
+          "alt": "Bright living room interior"
+        },
+        "highlights": [
+          "Space planning",
+          "Joinery & lighting drawings",
+          "Material & finish schedules"
+        ]
+      },
+      {
+        "id": "landscape-design",
+        "title": "Landscape Design",
+        "shortDescription": "Gardens, driveways and outdoor spaces designed for the tropics.",
+        "longDescription": "A well-planned garden keeps a house cool, manages rainwater and adds value. We design landscapes with native and low-maintenance plants, proper drainage, paving and outdoor living spaces.",
+        "icon": "Trees",
+        "image": {
+          "src": "/images/architecture/landscape-design.svg",
+          "alt": "Tropical garden with pathway"
+        },
+        "highlights": ["Planting plans", "Drainage & paving", "Outdoor living areas"]
+      },
+      {
+        "id": "renovation-designs",
+        "title": "Renovation Designs",
+        "shortDescription": "Extend, convert or modernise an existing building safely.",
+        "longDescription": "Adding a floor, opening up walls or converting a house into an office needs careful design. We survey the existing building, check the structure, and design changes that are safe, approvable and respectful of the original.",
+        "icon": "Hammer",
+        "image": {
+          "src": "/images/architecture/renovation-designs.svg",
+          "alt": "House renovation in progress"
+        },
+        "highlights": ["Measured survey", "Structural check", "Extension & conversion drawings"]
+      }
+    ]
+  },
+  "engineering": {
+    "intro": {
+      "eyebrow": "Engineering & Other Services",
+      "heading": "Engineering that stands the test of time",
+      "subheading": "Structural, mechanical and MEP design, supervision and cost planning by chartered engineers."
+    },
+    "services": [
+      {
+        "id": "structural-design",
+        "title": "Structural Design",
+        "shortDescription": "Safe, economical structures for houses, multi-storey and commercial buildings.",
+        "longDescription": "We design reinforced concrete, steel and composite structures — foundations, columns, beams, slabs and roofs — balancing safety with material cost.\n\nAll designs follow Eurocode and relevant Sri Lankan standards, with full calculations and detailed reinforcement drawings.",
+        "icon": "Building2",
+        "image": {
+          "src": "/images/engineering/structural-design.svg",
+          "alt": "Reinforced concrete frame"
+        },
+        "highlights": [
+          "RC, steel & composite",
+          "Foundation design",
+          "Calculations & reinforcement drawings"
+        ]
+      },
+      {
+        "id": "mechanical-services",
+        "title": "Mechanical Services",
+        "shortDescription": "Ventilation, air-conditioning and plumbing systems that run efficiently.",
+        "longDescription": "We design HVAC, ventilation, water supply and drainage systems sized correctly for the building — reducing running costs and avoiding over-specified equipment.",
+        "icon": "Fan",
+        "image": {
+          "src": "/images/engineering/mechanical-services.svg",
+          "alt": "Air-conditioning ducts in a ceiling"
+        },
+        "highlights": ["HVAC & ventilation", "Water supply & drainage", "Equipment sizing"]
+      },
+      {
+        "id": "mep",
+        "title": "MEP Design",
+        "shortDescription": "Coordinated mechanical, electrical and plumbing design for complete buildings.",
+        "longDescription": "Our MEP team coordinates electrical, lighting, fire protection, plumbing and mechanical systems with the architecture and structure so that services fit — avoiding clashes and costly site changes.",
+        "icon": "Zap",
+        "image": {
+          "src": "/images/engineering/mep.svg",
+          "alt": "Electrical distribution board"
+        },
+        "highlights": ["Electrical & lighting", "Fire protection", "Clash-free coordination"]
+      },
+      {
+        "id": "site-supervision",
+        "title": "Site Supervision",
+        "shortDescription": "Regular inspections so construction matches the approved drawings.",
+        "longDescription": "We inspect critical stages — foundations, reinforcement before concreting, and structural members — and issue reports with clear instructions to the contractor.\n\nIt protects your investment and is often required for the Certificate of Conformity (COC).",
+        "icon": "HardHat",
+        "image": {
+          "src": "/images/engineering/site-supervision.svg",
+          "alt": "Engineer inspecting reinforcement on site"
+        },
+        "highlights": ["Stage inspections", "Written site reports", "COC support"]
+      },
+      {
+        "id": "quantity-surveying",
+        "title": "Quantity Surveying & BOQ",
+        "shortDescription": "Accurate Bills of Quantities and cost estimates in LKR.",
+        "longDescription": "A detailed BOQ lets you compare contractor quotes fairly, plan bank loans and track spending. We prepare BOQs, cost estimates, tender documents and interim payment valuations.",
+        "icon": "Calculator",
+        "image": {
+          "src": "/images/engineering/quantity-surveying.svg",
+          "alt": "Bill of quantities and calculator"
+        },
+        "highlights": ["BOQ & cost estimates", "Tender documents", "Payment valuations"]
+      },
+      {
+        "id": "structural-assessment",
+        "title": "Structural Assessment",
+        "shortDescription": "Condition surveys and strength checks for existing buildings.",
+        "longDescription": "Cracks, leaks or plans to add a floor? We assess existing structures with visual surveys and non-destructive tests, then report on safety and recommend repairs or strengthening.",
+        "icon": "ScanSearch",
+        "image": {
+          "src": "/images/engineering/structural-assessment.svg",
+          "alt": "Engineer examining a crack in a wall"
+        },
+        "highlights": [
+          "Condition surveys",
+          "Non-destructive testing",
+          "Repair & strengthening advice"
+        ]
+      }
+    ],
+    "helpBox": {
+      "heading": "Not sure what you need?",
+      "text": "Tell us about your project and we'll recommend the right services.",
+      "cta": {
+        "label": "Get in touch",
+        "href": "/about/#contact"
+      }
+    }
+  },
+  "projects": {
+    "intro": {
+      "eyebrow": "Our work",
+      "heading": "Completed projects",
+      "subheading": "Homes, offices, hotels and public buildings we've designed and engineered across Sri Lanka."
+    },
+    "allLabel": "All",
+    "items": [
+      {
+        "id": "kandy-hillside-residence",
+        "title": "Hillside Residence",
+        "category": "Residential",
+        "location": "Kandy",
+        "year": 2024,
+        "client": "Mr. & Mrs. Perera",
+        "summary": "A three-storey family home stepped into a steep hillside overlooking the Mahaweli valley.",
+        "description": "The 15-perch sloping plot called for a split-level design with a retaining-wall foundation. Living spaces open onto cantilevered terraces facing the view, while bedrooms sit on the cooler, uphill side.\n\nMedura handled architecture, structural design, Kandy Municipal Council approval and site supervision through to the COC.",
+        "images": [
+          {
+            "src": "/images/projects/kandy-hillside-residence-1.svg",
+            "alt": "Hillside Residence front elevation"
+          },
+          {
+            "src": "/images/projects/kandy-hillside-residence-2.svg",
+            "alt": "Cantilevered terrace with valley view"
+          },
+          {
+            "src": "/images/projects/kandy-hillside-residence-3.svg",
+            "alt": "Double-height living room"
+          }
+        ],
+        "tags": ["Architecture", "Structural design", "Approvals", "Supervision"]
+      },
+      {
+        "id": "colombo-office-tower",
+        "title": "Union Place Office Building",
+        "category": "Commercial",
+        "location": "Colombo 02",
+        "year": 2023,
+        "client": "Lanka Ventures (Pvt) Ltd",
+        "summary": "An eight-storey office building with basement parking on a tight city-centre plot.",
+        "description": "We delivered the structural and MEP design for this 4,200 m² office building, including a two-level basement with secant-pile retaining walls.\n\nVariable-refrigerant-flow air-conditioning and LED lighting with daylight sensors cut projected energy use by around 30%.",
+        "images": [
+          {
+            "src": "/images/projects/colombo-office-tower-1.svg",
+            "alt": "Office building glass facade"
+          },
+          {
+            "src": "/images/projects/colombo-office-tower-2.svg",
+            "alt": "Office lobby"
+          },
+          {
+            "src": "/images/projects/colombo-office-tower-3.svg",
+            "alt": "Basement car park under construction"
+          },
+          {
+            "src": "/images/projects/colombo-office-tower-4.svg",
+            "alt": "Rooftop plant area"
+          }
+        ],
+        "tags": ["Structural design", "MEP", "Basement"]
+      },
+      {
+        "id": "galle-boutique-villa",
+        "title": "Boutique Villa",
+        "category": "Hospitality",
+        "location": "Unawatuna, Galle",
+        "year": 2024,
+        "summary": "A six-room boutique villa with a courtyard pool, a short walk from the beach.",
+        "description": "Inspired by southern coastal architecture, the villa wraps around a central courtyard and pool, with deep verandas and clay-tile roofs.\n\nWe designed for salt-air durability with higher concrete cover and corrosion-resistant fittings throughout.",
+        "images": [
+          {
+            "src": "/images/projects/galle-boutique-villa-1.svg",
+            "alt": "Villa courtyard with pool"
+          },
+          {
+            "src": "/images/projects/galle-boutique-villa-2.svg",
+            "alt": "Guest room veranda"
+          },
+          {
+            "src": "/images/projects/galle-boutique-villa-3.svg",
+            "alt": "Villa entrance at night"
+          }
+        ],
+        "tags": ["Architecture", "Interior design", "Landscape"]
+      },
+      {
+        "id": "kurunegala-school-block",
+        "title": "Science Laboratory Block",
+        "category": "Institutional",
+        "location": "Kurunegala",
+        "year": 2022,
+        "client": "Provincial Department of Education",
+        "summary": "A two-storey laboratory block for a national school, with four labs and a lecture hall.",
+        "description": "Designed for natural ventilation and daylight, the building uses a steel-framed roof with clerestory windows. We prepared the BOQ and tender documents and supervised construction to handover.",
+        "images": [
+          {
+            "src": "/images/projects/kurunegala-school-block-1.svg",
+            "alt": "School laboratory block exterior"
+          },
+          {
+            "src": "/images/projects/kurunegala-school-block-2.svg",
+            "alt": "Science laboratory interior"
+          },
+          {
+            "src": "/images/projects/kurunegala-school-block-3.svg",
+            "alt": "Steel roof structure"
+          }
+        ],
+        "tags": ["Structural design", "BOQ", "Supervision"]
+      },
+      {
+        "id": "negombo-apartments",
+        "title": "Lagoon View Apartments",
+        "category": "Residential",
+        "location": "Negombo",
+        "year": 2023,
+        "client": "Seaside Developers",
+        "summary": "Twelve apartments over five floors with lagoon views and rooftop gardens.",
+        "description": "A compact apartment block with a raft foundation suited to the sandy coastal soil. Units are arranged so every apartment gets cross-ventilation and a balcony facing the lagoon.",
+        "images": [
+          {
+            "src": "/images/projects/negombo-apartments-1.svg",
+            "alt": "Apartment building with balconies"
+          },
+          {
+            "src": "/images/projects/negombo-apartments-2.svg",
+            "alt": "Rooftop garden"
+          },
+          {
+            "src": "/images/projects/negombo-apartments-3.svg",
+            "alt": "Apartment living area"
+          }
+        ],
+        "tags": ["Architecture", "Structural design", "MEP"]
+      },
+      {
+        "id": "nuwara-eliya-bungalow",
+        "title": "Tea Estate Bungalow Restoration",
+        "category": "Renovation",
+        "location": "Nuwara Eliya",
+        "year": 2021,
+        "summary": "Restoring and extending a 1920s planters' bungalow while keeping its colonial character.",
+        "description": "After a structural assessment of the timber roof and rubble walls, we strengthened the original structure and added a new guest wing in a sympathetic style.\n\nModern plumbing, electrical and heating were integrated discreetly.",
+        "images": [
+          {
+            "src": "/images/projects/nuwara-eliya-bungalow-1.svg",
+            "alt": "Restored colonial bungalow"
+          },
+          {
+            "src": "/images/projects/nuwara-eliya-bungalow-2.svg",
+            "alt": "Restored timber roof"
+          },
+          {
+            "src": "/images/projects/nuwara-eliya-bungalow-3.svg",
+            "alt": "New guest wing"
+          }
+        ],
+        "tags": ["Structural assessment", "Renovation", "MEP"]
+      },
+      {
+        "id": "matara-showroom",
+        "title": "Vehicle Showroom & Service Centre",
+        "category": "Commercial",
+        "location": "Matara",
+        "year": 2022,
+        "client": "Southern Motors",
+        "summary": "A column-free 30 m span showroom with an attached service workshop.",
+        "description": "A long-span steel portal frame gives an open, column-free showroom floor. The workshop includes oil interceptors, compressed-air lines and heavy-duty industrial flooring.",
+        "images": [
+          {
+            "src": "/images/projects/matara-showroom-1.svg",
+            "alt": "Showroom glass front"
+          },
+          {
+            "src": "/images/projects/matara-showroom-2.svg",
+            "alt": "Steel portal frame"
+          },
+          {
+            "src": "/images/projects/matara-showroom-3.svg",
+            "alt": "Service workshop"
+          }
+        ],
+        "tags": ["Steel structure", "Mechanical services", "BOQ"]
+      },
+      {
+        "id": "jaffna-family-home",
+        "title": "Courtyard Family Home",
+        "category": "Residential",
+        "location": "Jaffna",
+        "year": 2025,
+        "client": "Dr. S. Kanagaratnam",
+        "summary": "A single-storey home built around a traditional central courtyard (mutram).",
+        "description": "The design reinterprets the northern courtyard house: rooms open onto a shaded mutram that draws breezes through the home. Thick walls and a reflective roof keep interiors cool in the dry-zone heat.",
+        "images": [
+          {
+            "src": "/images/projects/jaffna-family-home-1.svg",
+            "alt": "Courtyard house exterior"
+          },
+          {
+            "src": "/images/projects/jaffna-family-home-2.svg",
+            "alt": "Central courtyard"
+          },
+          {
+            "src": "/images/projects/jaffna-family-home-3.svg",
+            "alt": "Shaded veranda"
+          }
+        ],
+        "tags": ["Architecture", "Approvals", "3D renders"]
+      }
+    ]
+  },
+  "about": {
+    "intro": {
+      "eyebrow": "About Medura",
+      "heading": "A small team with big attention to detail",
+      "subheading": "Architects and engineers working side by side, so your project is designed, approved and built right the first time."
+    },
+    "story": {
+      "eyebrow": "Since 2013",
+      "heading": "Our story",
+      "paragraphs": [
+        "Medura was founded in Kandy in 2013 by a civil engineer and an architect who were tired of seeing good designs fail on site because nobody connected the drawings to the construction.",
+        "Today we are a team of architects, chartered engineers, quantity surveyors and draughtspeople serving clients across 18 districts — from first-time home builders to schools, hotels and commercial developers.",
+        "Our promise is simple: clear advice, honest budgets and drawings that work in the real world."
+      ],
+      "image": {
+        "src": "/images/about/office.svg",
+        "alt": "The Medura team at work in the Kandy studio"
+      }
+    },
+    "mission": "To design and engineer safe, sustainable and beautiful buildings that make our clients' plans achievable — on time and on budget.",
+    "vision": "To be Sri Lanka's most trusted design and engineering partner for homes and businesses.",
+    "valuesIntro": {
+      "eyebrow": "What guides us",
+      "heading": "Our values"
+    },
+    "values": [
+      {
+        "title": "Integrity",
+        "description": "Honest advice and transparent fees, even when it's not what you expected to hear.",
+        "icon": "Scale"
+      },
+      {
+        "title": "Precision",
+        "description": "Every drawing checked, every calculation verified.",
+        "icon": "Ruler"
+      },
+      {
+        "title": "Partnership",
+        "description": "We work with you, your contractor and the authorities as one team.",
+        "icon": "Handshake"
+      },
+      {
+        "title": "Sustainability",
+        "description": "Designs that use less energy, less material and suit our climate.",
+        "icon": "Leaf"
+      }
+    ],
+    "team": {
+      "eyebrow": "Our people",
+      "heading": "Meet the team",
+      "members": [
+        {
+          "name": "Eng. Ruwan Jayasekara",
+          "role": "Founder & Principal Structural Engineer",
+          "photo": {
+            "src": "/images/team/ruwan-jayasekara.svg",
+            "alt": "Portrait of Ruwan Jayasekara"
+          },
+          "bio": "BSc (Eng) Peradeniya, CEng MIESL. Over 15 years designing residential and commercial structures."
+        },
+        {
+          "name": "Arch. Nadeesha Wijesinghe",
+          "role": "Co-founder & Principal Architect",
+          "photo": {
+            "src": "/images/team/nadeesha-wijesinghe.svg",
+            "alt": "Portrait of Nadeesha Wijesinghe"
+          },
+          "bio": "Chartered Architect (SLIA). Passionate about tropical modern homes and adaptive reuse."
+        },
+        {
+          "name": "Kasun Rathnayake",
+          "role": "MEP Engineer",
+          "photo": {
+            "src": "/images/team/kasun-rathnayake.svg",
+            "alt": "Portrait of Kasun Rathnayake"
+          },
+          "bio": "Designs efficient electrical and mechanical systems for buildings of every size."
+        },
+        {
+          "name": "Ishara Fernando",
+          "role": "Quantity Surveyor"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "intro": {
+      "eyebrow": "Contact",
+      "heading": "Let's talk about your project",
+      "subheading": "Call, WhatsApp or send us a message — we usually reply within one working day."
+    },
+    "phone": "+94 77 123 4567",
+    "email": "hello@medura.lk",
+    "whatsapp": "94771234567",
+    "address": ["No. 42, Peradeniya Road", "Kandy 20000", "Sri Lanka"],
+    "mapEmbedUrl": "https://www.google.com/maps?q=Peradeniya+Road,+Kandy,+Sri+Lanka&output=embed",
+    "workingHours": [
+      {
+        "days": "Monday – Friday",
+        "hours": "8:30 AM – 5:30 PM"
+      },
+      {
+        "days": "Saturday",
+        "hours": "9:00 AM – 1:00 PM"
+      },
+      {
+        "days": "Sunday & Poya days",
+        "hours": "Closed"
+      }
+    ],
+    "social": [
+      {
+        "platform": "facebook",
+        "url": "https://www.facebook.com/"
+      },
+      {
+        "platform": "instagram",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "platform": "linkedin",
+        "url": "https://www.linkedin.com/"
+      },
+      {
+        "platform": "youtube",
+        "url": "https://www.youtube.com/"
+      }
+    ],
+    "form": {
+      "heading": "Send us a message",
+      "text": "Fill in the form and send it straight to us on WhatsApp or by email.",
+      "messageGreeting": "Hello Medura, I'd like to enquire about a project.",
+      "emailSubject": "Project enquiry"
+    }
+  }
+}

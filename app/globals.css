@@ -1,26 +1,77 @@
 @import "tailwindcss";
+@import "../styles/theme.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Base element styles. Colors/fonts come from tokens in styles/theme.css. */
+@layer base {
+  html {
+    scroll-padding-top: var(--navbar-height);
+    -webkit-text-size-adjust: 100%;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  body {
+    @apply bg-background font-body text-foreground;
+    text-rendering: optimizeLegibility;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading text-heading;
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+
+  ::selection {
+    @apply bg-accent text-accent-foreground;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Smooth scrolling for in-page links (#contact, service jump list, back-to-top).
+   <html data-scroll-behavior="smooth"> tells Next.js to switch it off during page navigations. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Reduced motion safety net: components already turn off parallax, autoplay and large
+   movements; this also makes any remaining CSS animation/transition effectively instant. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Theme switch: circular reveal (View Transitions API) — the clip-path animation is run
+   from components/layout/ThemeToggle.tsx, so the default cross-fade is disabled here. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+/* Theme switch fallback for browsers without View Transitions: short color cross-fade. */
+.theme-fade,
+.theme-fade *,
+.theme-fade *::before,
+.theme-fade *::after {
+  transition:
+    background-color var(--duration-base) ease,
+    border-color var(--duration-base) ease,
+    color var(--duration-base) ease,
+    fill var(--duration-base) ease !important;
 }
