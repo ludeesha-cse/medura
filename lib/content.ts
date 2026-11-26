@@ -9,11 +9,29 @@
 import raw from "@/content/site.json";
 import type { ContentImage, Project, Service, ServicesPage, SiteContent } from "@/types/content";
 
+/** Set at build time (next.config.ts) — e.g. "/medura" on GitHub Pages, "" elsewhere. */
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+/** Prefixes a root-relative asset path ("/images/x.svg") with the site's basePath. */
+export const withBasePath = (path: string): string =>
+  BASE_PATH && path.startsWith("/") && !path.startsWith("//") && !path.startsWith(BASE_PATH + "/")
+    ? BASE_PATH + path
+    : path;
+
+/** Walks the JSON and prefixes every "/images/..." string with the basePath. */
+const prefixAssets = (value: unknown): unknown => {
+  if (typeof value === "string") return value.startsWith("/images/") ? withBasePath(value) : value;
+  if (Array.isArray(value)) return value.map(prefixAssets);
+  if (value && typeof value === "object")
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, prefixAssets(v)]));
+  return value;
+};
+
 // The build-time validator (scripts/validate-content) checks the JSON matches these types.
-const content = raw as unknown as SiteContent;
+const content = prefixAssets(raw) as SiteContent;
 
 /** Shown wherever an optional image is missing. */
-export const PLACEHOLDER_IMAGE = "/images/placeholder.svg";
+export const PLACEHOLDER_IMAGE = withBasePath("/images/placeholder.svg");
 
 /* ------------------------------------------------------------- helpers */
 
