@@ -5,7 +5,7 @@ import { BrandIcon, SOCIAL_LABELS } from "@/components/ui/BrandIcon";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SmartImage } from "@/components/ui/SmartImage";
-import { hasItems, hasText, mailtoHref, telHref, whatsappHref } from "@/lib/content";
+import { getPhones, hasItems, hasText, mailtoHref, telHref, whatsappHref } from "@/lib/content";
 import { getIcon } from "@/lib/icons";
 import type { AboutContent, ContactContent } from "@/types/content";
 import { cardHover, imageZoom } from "@/components/ui/Card";
@@ -200,9 +200,11 @@ export function ContactSection({
               </span>
               <div>
                 <p className="text-sm text-muted-foreground">Call us</p>
-                <a href={telHref(contact.phone)} className={linkCls}>
-                  {contact.phone}
-                </a>
+                {getPhones().map((phone) => (
+                  <a key={phone} href={telHref(phone)} className={`${linkCls} block`}>
+                    {phone}
+                  </a>
+                ))}
               </div>
             </li>
             <li className={row}>

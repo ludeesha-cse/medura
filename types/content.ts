@@ -137,6 +137,8 @@ export interface Service {
 export interface ServicesPage {
   intro: SectionIntro;
   services: Service[];
+  /** Optional "Our sample packages" section (shown on the Engineering & Services page). */
+  packages?: PackagesSection;
   /** Optional help box (Engineering page side panel). */
   helpBox?: {
     heading: string;
@@ -154,7 +156,8 @@ export interface Project {
   /** Used by the filter on the Projects page. */
   category: string;
   location: string;
-  year: number;
+  /** Year completed — optional; projects without one are listed after dated ones. */
+  year?: number;
   client?: string;
   summary: string;
   /** Blank lines (\n\n) start a new paragraph. */
@@ -164,11 +167,50 @@ export interface Project {
   tags?: string[];
 }
 
+/** A type of building Medura works on (Projects page → "Project sectors"). */
+export interface Sector {
+  title: string;
+  /** Examples of building types, shown under the title. */
+  description: string;
+  icon?: IconName;
+  image?: ContentImage;
+}
+
 export interface ProjectsPage {
   intro: SectionIntro;
   /** Label of the "show everything" filter button. */
   allLabel?: string;
+  /** Heading above the project list (shown when sectors are present). */
+  listIntro?: SectionIntro;
   items: Project[];
+  /** Optional "Project sectors & capabilities" section, shown above the project list. */
+  sectors?: SectionIntro & { items: Sector[] };
+}
+
+/* ------------------------------------------------------------ packages */
+
+export interface PackageItem {
+  title: string;
+  /** Optional one-line explanation of what's included. */
+  description?: string;
+}
+
+export interface ServicePackage {
+  name: string;
+  /** Short line under the name, e.g. "Essential drawings for approval". */
+  tagline?: string;
+  items: PackageItem[];
+  /** Visually highlights this package (dark card). */
+  featured?: boolean;
+  /** Optional small label above the card, e.g. "Most popular". */
+  badge?: string;
+}
+
+export interface PackagesSection extends SectionIntro {
+  packages: ServicePackage[];
+  /** Small print under the packages. */
+  note?: string;
+  cta?: Link;
 }
 
 /* --------------------------------------------------------------- about */
@@ -208,8 +250,10 @@ export interface SocialLink {
 
 export interface ContactContent {
   intro: SectionIntro;
-  /** As displayed, e.g. "+94 77 123 4567". */
+  /** Main phone number, as displayed, e.g. "+94 77 123 4567". */
   phone: string;
+  /** Other phone numbers, shown after the main one. */
+  additionalPhones?: string[];
   email: string;
   /** International format, digits only, no "+" — e.g. "94771234567". */
   whatsapp: string;

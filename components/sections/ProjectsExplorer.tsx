@@ -121,7 +121,9 @@ function ProjectCard({ project, reversed }: { project: ProjectWithImages; revers
           <span className="rounded-full bg-accent-soft px-3 py-1 text-xs font-medium tracking-eyebrow text-foreground uppercase">
             {project.category}
           </span>
-          <span className="font-heading text-lg text-muted-foreground">{project.year}</span>
+          {project.year && (
+            <span className="font-heading text-lg text-muted-foreground">{project.year}</span>
+          )}
         </div>
 
         <h2
@@ -139,13 +141,15 @@ function ProjectCard({ project, reversed }: { project: ProjectWithImages; revers
             </dt>
             <dd>{project.location}</dd>
           </div>
-          <div className="flex items-center gap-1.5">
-            <dt>
-              <Calendar className="size-4 text-accent-ink" aria-hidden="true" />
-              <span className="sr-only">Year</span>
-            </dt>
-            <dd>{project.year}</dd>
-          </div>
+          {project.year && (
+            <div className="flex items-center gap-1.5">
+              <dt>
+                <Calendar className="size-4 text-accent-ink" aria-hidden="true" />
+                <span className="sr-only">Year</span>
+              </dt>
+              <dd>{project.year}</dd>
+            </div>
+          )}
           {project.client && (
             <div className="flex items-center gap-1.5">
               <dt>

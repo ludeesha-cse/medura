@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import { CtaBanner } from "@/components/sections/HomeSections";
+import { Packages } from "@/components/sections/Packages";
 import { PageHeader } from "@/components/sections/PageHeader";
 import { ServicesList } from "@/components/sections/ServicesList";
 import { Section } from "@/components/ui/Section";
@@ -28,6 +29,7 @@ export default function ServicesPage() {
           />
         </Section>
       )}
+      <Packages data={page.packages} />
       <CtaBanner data={getHome().ctaBanner} />
     </>
   );

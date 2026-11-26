@@ -55,6 +55,10 @@ export const getHome = () => content.home;
 export const getAbout = () => content.about;
 export const getContact = () => content.contact;
 
+/** Main phone number followed by any additional ones. */
+export const getPhones = (): string[] =>
+  [content.contact.phone, ...(content.contact.additionalPhones ?? [])].filter(hasText);
+
 const cleanServices = (page: ServicesPage): ServicesPage => ({
   ...page,
   services: (page.services ?? []).filter((s) => hasText(s.id) && hasText(s.title)),
@@ -71,11 +75,11 @@ export const getAllServices = (): Service[] => [
 
 export const getProjectsPage = () => content.projects;
 
-/** Projects, newest first. */
+/** Projects, newest first (projects without a year keep their JSON order, after dated ones). */
 export const getProjects = (): Project[] =>
   [...(content.projects.items ?? [])]
     .filter((p) => hasText(p.id) && hasText(p.title))
-    .sort((a, b) => b.year - a.year);
+    .sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 
 /** Unique categories in order of first appearance (for the Projects filter). */
 export const getProjectCategories = (): string[] => [

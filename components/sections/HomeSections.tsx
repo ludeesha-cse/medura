@@ -153,7 +153,8 @@ export function FeaturedProjects({
                 <div className="absolute inset-0 bg-linear-to-t from-overlay-from from-15% via-overlay-from/70 via-50% to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-6 text-inverse-foreground">
                   <p className="text-xs font-medium tracking-eyebrow text-inverse-accent uppercase">
-                    {p.category} · {p.year}
+                    {p.category}
+                    {p.year ? ` · ${p.year}` : ""}
                   </p>
                   <h3 className="mt-2 flex items-start justify-between gap-3 text-2xl font-semibold text-inverse-foreground sm:text-3xl">
                     {p.title}

@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import { CtaBanner } from "@/components/sections/HomeSections";
 import { PageHeader } from "@/components/sections/PageHeader";
+import { ProjectSectors } from "@/components/sections/ProjectSectors";
 import { ProjectsExplorer } from "@/components/sections/ProjectsExplorer";
 import { Section } from "@/components/ui/Section";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import {
   getHome,
   getProjectCategories,
@@ -27,6 +29,10 @@ export default function ProjectsPage() {
       <PageHeader intro={page.intro} image={projects[0]?.displayImages[0]} />
       {projects.length > 0 ? (
         <Section>
+          <ProjectSectors sectors={page.sectors} />
+          {page.sectors && page.listIntro && (
+            <SectionHeading intro={page.listIntro} id="projects-list-heading" align="center" />
+          )}
           <ProjectsExplorer
             projects={projects}
             categories={getProjectCategories()}
@@ -35,6 +41,7 @@ export default function ProjectsPage() {
         </Section>
       ) : (
         <Section>
+          <ProjectSectors sectors={page.sectors} />
           <p className="text-center text-muted-foreground">Projects coming soon.</p>
         </Section>
       )}

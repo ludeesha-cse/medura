@@ -6,6 +6,7 @@ import {
   getArchitecture,
   getContact,
   getEngineering,
+  getPhones,
   getSite,
   hasItems,
   mailtoHref,
@@ -99,9 +100,13 @@ export function Footer() {
           <ul className="space-y-3.5 text-sm">
             <li className="flex gap-3">
               <Phone className="mt-0.5 size-4 shrink-0 text-inverse-accent" aria-hidden="true" />
-              <a href={telHref(contact.phone)} className={link}>
-                {contact.phone}
-              </a>
+              <span className="flex flex-col gap-1">
+                {getPhones().map((phone) => (
+                  <a key={phone} href={telHref(phone)} className={link}>
+                    {phone}
+                  </a>
+                ))}
+              </span>
             </li>
             <li className="flex gap-3">
               <BrandIcon name="whatsapp" className="mt-0.5 size-4 shrink-0 text-inverse-accent" />
