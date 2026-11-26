@@ -1,3 +1,4 @@
+import { BASE_PATH } from "@/lib/base-path";
 import type { MetadataRoute } from "next";
 import { BRAND_COLORS } from "@/lib/brand";
 import { getSite } from "@/lib/content";
@@ -11,7 +12,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: site.legalName,
     short_name: site.name,
     description: site.seo.description,
-    start_url: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/`,
+    start_url: `${BASE_PATH}/`,
     display: "standalone",
     theme_color: BRAND_COLORS.primary,
     background_color: BRAND_COLORS.lightBackground,

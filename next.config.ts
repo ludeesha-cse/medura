@@ -28,27 +28,18 @@
 // export default nextConfig;
 
 import type { NextConfig } from "next";
+import { BASE_PATH } from "./lib/base-path";
 
 /**
  * Fully static site: `npm run build` writes plain HTML/CSS/JS to `out/`.
- *
- * On GitHub Pages the site lives under /<repo>/ (e.g. /medura/), so basePath
- * is set from REPOSITORY_URL_GITHUB when building in GitHub Actions. Locally (and
- * on a custom domain) it stays empty.
+ * No server, no API routes.
  */
-const repo = process.env.REPOSITORY_URL_GITHUB?.split("/")[1];
-const basePath = repo ? `/${repo}` : "";
-
 const nextConfig: NextConfig = {
   output: "export",
   // Each route becomes a folder with index.html (e.g. /projects/index.html).
   trailingSlash: true,
-  basePath,
-  // basePath is NOT applied to plain strings like "/images/x.svg", so expose it
-  // to the app and prefix asset paths ourselves (see lib/content.ts).
-  env: {
-    NEXT_PUBLIC_BASE_PATH: basePath,
-  },
+  // Staging on GitHub Pages is served from /medura/.
+  basePath: BASE_PATH,
   images: {
     // The Next.js image optimizer needs a server, so serve images as-is.
     unoptimized: true,
