@@ -33,10 +33,10 @@ import type { NextConfig } from "next";
  * Fully static site: `npm run build` writes plain HTML/CSS/JS to `out/`.
  *
  * On GitHub Pages the site lives under /<repo>/ (e.g. /medura/), so basePath
- * is set from GITHUB_REPOSITORY when building in GitHub Actions. Locally (and
+ * is set from REPOSITORY_URL_GITHUB when building in GitHub Actions. Locally (and
  * on a custom domain) it stays empty.
  */
-const repo = process.env.GITHUB_REPOSITORY?.split("/")[1];
+const repo = process.env.REPOSITORY_URL_GITHUB?.split("/")[1];
 const basePath = repo ? `/${repo}` : "";
 
 const nextConfig: NextConfig = {
